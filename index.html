@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can we run js from rust?</title>
+    <link data-trunk rel="copy-dir" href="static/" ..other options here.. />
+</head>
+<body>
+    <script>
+        function say_hello() {
+            console.log("hello from javascript");
+        }
+
+        function say_hello_name(name) {
+            console.log(`Hello ${name}`);
+        }
+
+        function add_bang(string) {
+            return `${string}!`;
+        }
+
+        function list_it(a, b) {
+            return [a, b];
+        }
+
+        function log_each(items) {
+            items.forEach(item => console.log(item));
+        }
+    </script>
+
+    <script src="/static/lodash.js"></script>
+</body>
+</html>
